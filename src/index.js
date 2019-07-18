@@ -6,7 +6,6 @@ import manageUsers from './reducers/manageUsers'
 import { createStore} from 'redux';
 import { Provider } from "react-redux";
 
-
 const store = createStore(manageUsers)
 
 ReactDOM.render(
