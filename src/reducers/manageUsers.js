@@ -7,7 +7,7 @@ export default function manageUsers(state = {
       return {
         ...state,
         users: [...state.users, action.user]
-      }
+      };
 
     default:
       return state;
