@@ -4,12 +4,11 @@ class Users extends Component {
 
   render() {
       // debugger
+      let ulist = this.props.users.map((user, index)=> <li key={index}> User: {user.username} Hometown: {user.hometown} </li> )
     return (
       <div>
         <ul>
-            {this.props.users.map(user=> {
-                return <li> User: {user.username} Hometown: {user.hometown} </li>
-            })}
+            {ulist}
             {this.props.users.length}
         </ul>
       </div>
